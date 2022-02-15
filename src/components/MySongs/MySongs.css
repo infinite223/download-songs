@@ -1,0 +1,19 @@
+.mySongs{
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: rgb(165, 151, 26);
+    top: 90%;
+    left: 90%;
+    font-size: 20px;
+    z-index: 4;
+    width: 200px;
+    line-height: 60px;
+    height: 60px;
+    border-radius: 1rem;
+    font-weight: 900;
+}
+.mySongs:hover{
+    cursor: pointer;
+    background-color: rgb(253, 229, 15);
+}
+

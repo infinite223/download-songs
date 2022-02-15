@@ -7,8 +7,8 @@ const Cards = ({ dataItems }) => {
             flexWrap: "wrap",
             }
         }>
-            {dataItems.map((item) => (
-            <Card key={item.id.videoId} item={item}></Card>
+            {dataItems.map((item,i) => (
+            <Card key={item.id.videoId} number={i+1} item={item}></Card>
         ))}
         </div>
      )

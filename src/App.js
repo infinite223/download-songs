@@ -2,6 +2,7 @@ import { useState,useEffect } from 'react';
 import './App.css';
 import Cards from './components/Cards.js'
 import {getData} from './components/DataApi/DataApi'
+import MySongs from './components/MySongs/MySongs.js'
 function App() {  
   const [dataItems,setDataItems] = useState([]);
   const [param, setParam] = useState()
@@ -14,10 +15,13 @@ function App() {
   console.log(param)
   //lepszy search
     return (
-    <div className="App">
-        <input type="text" onChange={(q)=>setParam(q.target.value)}/>
-        <Cards dataItems={dataItems}/>       
-    </div>
+     <div>
+       <div className="App">
+       <MySongs/>
+         <input placeholder='Search' type="text" onChange={(q)=>setParam(q.target.value)}/>
+        <Cards dataItems={dataItems}/> 
+       </div>
+     </div> 
   );  
 }
 

@@ -2,9 +2,11 @@
   text-align: center;
   margin: auto;
   padding: 50px;
-  background-color: rgba(248, 246, 244, 0.925);
-  height: 100vh;
-
+  background-color: rgba(112, 104, 95, 0.986);
+  height: auto;
+  min-height: 100vh;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  z-index: 2;
 }
 input{
   width: 340px;
@@ -17,4 +19,26 @@ input{
   box-shadow: inset 0 0 1em rgb(153, 150, 134), 0 0 1em rgba(49, 22, 22, 0.493);
   border-width:0px;
   border:none;
+  border-radius: 2%;
+}
+input, textarea {outline-style:none;}
+input:hover{
+  box-shadow: inset 0 0 1em rgb(153, 150, 134), 0 0 1em rgba(46, 211, 5, 0.493);
+}
+.App__mySongs{
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: rgba(112, 104, 95, 0.986);
+  padding: 1rem;
+  top: 0;
+  font-size: 20px;
+  z-index: 4;
+  width: 200px;
+}
+@media screen and (max-width:650px) {
+  input{
+    width: 200px;
+    height: 40px;
+    padding: 0%;
+  }
 }
