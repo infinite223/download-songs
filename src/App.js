@@ -1,17 +1,22 @@
 import { useState,useEffect } from 'react';
 import './App.css';
-import Card from './components/Card.js'
-
+import Cards from './components/Cards.js'
+import {getData} from './components/DataApi/DataApi'
 function App() {  
-
+  const [dataItems,setDataItems] = useState([]);
+  const [param, setParam] = useState()
+  useEffect(()=>{
+      getData(param?param:"see")
+      .then((data)=>
+      setDataItems(data)    
+    )    
+  },[param])
+  console.log(param)
+  //lepszy search
     return (
     <div className="App">
-      {Array(5).fill().map((x, i) => 
-        <Card
-          key={i}
-          number={i}
-        />    
-      )}           
+        <input type="text" onChange={(q)=>setParam(q.target.value)}/>
+        <Cards dataItems={dataItems}/>       
     </div>
   );  
 }
