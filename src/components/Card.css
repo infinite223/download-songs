@@ -7,11 +7,11 @@
     border-radius: 4%;
     z-index: 2;
     display:block;
+    position: relative;
 }
-.card:hover{
-    background-color: rgba(177, 147, 115, 0.753);
+.card:hover{    
+    background-color: rgba(240, 220, 38, 0.096);
     cursor: pointer;
-    opacity: 0.4;
 }
 .card__number{
     font-size:x-large;
@@ -27,18 +27,24 @@
     line-height: 50px;  
 }
 .card:hover .card_plus{
-    display:none;
+    display:flex;
 }
 .card_plus{
+    position: absolute;
     display:none;
-    position:absolute;
-    width: 100px;
-    z-index: 3;
-    opacity: 1;  
-    
+    height: 50px;
+    width: 50px;
+    z-index: 3;   
+    top:37%;
+    left:40%;
 }
+
 .card img{
     width:240px;
+}
+.card:hover > .secend_img{
+    filter: hue-rotate(180deg);
+    opacity: 0.2;
 }
 
 @media screen and (max-width:650px) {

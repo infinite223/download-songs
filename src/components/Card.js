@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import './Card.css'
-import plus from './../icon/add.png'
+import plus from './../icon/plus.png'
 
 const  Card = ({ item, number }) => {   
   //console.log(item)     
@@ -14,7 +14,7 @@ const  Card = ({ item, number }) => {
           </div>
           <div className='card__number'>{number}</div>
           <h3 style={{marginTop:"-30px"}}>{item.snippet.channelTitle.length<10?item.snippet.channelTitle:`${item.snippet.channelTitle.substring(0, 15)}...`}</h3>
-          <img src={item.snippet.thumbnails.default.url}/>
+          <img className="secend_img" src={item.snippet.thumbnails.default.url}/>
           <p>{item.snippet.title.length<60?item.snippet.title:`${item.snippet.title.substring(0, 25)}...`}</p>
       </div>
       }
