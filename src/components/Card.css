@@ -1,6 +1,6 @@
 .card{
     width: 240px;
-    height: 360px;
+    height: 340px;
     background-color: rgba(218, 207, 195, 0.911);
     box-shadow: inset 0 0 1em rgb(153, 150, 134), 0 0 1em rgba(49, 22, 22, 0.493);
     margin: 20px;
@@ -10,7 +10,9 @@
     position: relative;
 }
 .card:hover{    
-    background-color: rgba(240, 220, 38, 0.096);
+    background-color: rgba(157, 173, 170, 0.295);
+    backdrop-filter:blur(50px); 
+    
     cursor: pointer;
 }
 .card__number{
@@ -35,7 +37,7 @@
     height: 50px;
     width: 50px;
     z-index: 3;   
-    top:37%;
+    top:40%;
     left:40%;
 }
 

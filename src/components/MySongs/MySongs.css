@@ -16,4 +16,41 @@
     cursor: pointer;
     background-color: rgb(253, 229, 15);
 }
+.mySongs_list{
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: rgba(218, 207, 195, 0.911);
+    opacity: 0.96;
+    border-radius: 2%;
+    top:15%;
+    left: 5%;
+    width: 90%;
+    height: 70vh;
+    z-index: 4;
+    padding: 35px;
+  
+}  
+.mySongs_list_title{
+    width:100%;
+} 
+text{
+    color: red;
+    font-size:23px;
+    font-weight: 900;
+    float: right;
+}
+text:hover{
+    cursor: pointer;
+    color: rgb(253, 229, 15);;
+}
+h2{
+    float: left;
+}
+.mySongs_list_songs{
+    margin-top: 5rem;
+    width: 100%;
+    height: 90%;
 
+    display: flex;
+    align-items: center;
+}
