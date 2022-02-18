@@ -50,7 +50,31 @@ h2{
     margin-top: 5rem;
     width: 100%;
     height: 90%;
-
     display: flex;
     align-items: center;
 }
+.mySongs_list_songs_card{
+    flex-direction: column;
+
+}
+.mySongs_download{
+    font-size: xx-large;
+    color: rgb(37, 184, 17);
+    margin-top: -15px;
+}
+.mySongs_download:hover{
+    color: blue;
+    cursor: pointer;
+}
+@media screen and (max-width:650px) {
+    .mySongs_list_songs{
+        flex-direction: column;
+        height: auto;
+        min-height: 90%;
+    } 
+    .mySongs_list{
+        height: auto;   
+        min-height: 70vh;  
+    }
+}
+

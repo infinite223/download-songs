@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card.js'
-const Cards = ({ dataItems,addSong }) => {
+const Cards = ({ dataItems,Songs }) => {
     return (
         <div style={{
             display: "flex",
@@ -8,7 +8,7 @@ const Cards = ({ dataItems,addSong }) => {
             }
         }>
             {dataItems.map((item,i) => (
-            <Card addSong={addSong} key={item.id.videoId} number={i+1} item={item}></Card>
+            <Card Songs={Songs} key={item.id.videoId} number={i+1} item={item}></Card>
         ))}
         </div>
      )

@@ -27,7 +27,7 @@ function App() {
        <div className="App">
        <MySongs mySongs={mySongs} deleteSong={DeleteSong} />
          <input placeholder='Search' type="text" onChange={(q)=>setParam(q.target.value)}/>
-        <Cards dataItems={dataItems} addSong={AddSong}/> 
+        <Cards dataItems={dataItems} Songs={AddSong}/> 
        </div>
      </div> 
   );  

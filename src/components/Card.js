@@ -2,13 +2,13 @@ import React,{useState, useEffect} from 'react'
 import './Card.css'
 import plus from './../icon/plus.png'
 
-const  Card = ({ item, number,addSong }) => {    
+const  Card = ({ item, number,Songs }) => {    
   //console.log(item)     
                
   return (
     <>
       {item.snippet!==undefined&&
-       <div className='card' onClick={()=>addSong(item)}>
+       <div className='card' onClick={()=>Songs(item)}>
           <div className='card_plus'>
             <img src={plus} alt="plus"/>
           </div>
