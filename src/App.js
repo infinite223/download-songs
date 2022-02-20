@@ -15,10 +15,12 @@ function App() {
   },[param])
 
   const AddSong = (item) =>{
-    setMySongs([...mySongs,item])
+    var found = mySongs.find(function (element) {
+      return element === item;
+    });
+    if(found==undefined)setMySongs([...mySongs,item])
   }
   const DeleteSong = (item) =>{
-    console.log("usuwa")
     setMySongs(mySongs.filter((e)=>(e !== item)));                  
   }
   console.log(mySongs);

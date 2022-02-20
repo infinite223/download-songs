@@ -8,7 +8,7 @@ const Cards = ({ dataItems,Songs }) => {
             }
         }>
             {dataItems.map((item,i) => (
-            <Card Songs={Songs} key={item.id.videoId} number={i+1} item={item}></Card>
+            <Card Songs={Songs} icon="+" key={item.id.videoId} number={i+1} item={item}></Card>
         ))}
         </div>
      )

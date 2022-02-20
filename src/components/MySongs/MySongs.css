@@ -36,8 +36,9 @@
 text{
     color: red;
     font-size:29px;
-    font-weight: 900;
+    font-weight: 900;  
     float: right;
+    line-height: 20px;
 }
 text:hover{
     cursor: pointer;

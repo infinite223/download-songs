@@ -19,26 +19,20 @@ input{
   box-shadow: inset 0 0 1em rgb(153, 150, 134), 0 0 1em rgba(49, 22, 22, 0.493);
   border-width:0px;
   border:none;
-  border-radius: 2%;
+  border-radius: 3%;
 }
 input, textarea {outline-style:none;}
 input:hover{
   box-shadow: inset 0 0 1em rgb(153, 150, 134), 0 0 1em rgba(46, 211, 5, 0.493);
 }
-.App__mySongs{
-  position: -webkit-sticky;
-  position: sticky;
-  background-color: rgba(112, 104, 95, 0.986);
-  padding: 1rem;
-  top: 0;
-  font-size: 20px;
-  z-index: 4;
-  width: 200px;
-}
+
 @media screen and (max-width:650px) {
+  .App{
+    padding: 2rem;
+  }
   input{
-    width: 200px;
-    height: 40px;
+    width: 290px;
+    height: 70px;
     padding: 0%;
   }
 }

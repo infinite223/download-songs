@@ -34,13 +34,11 @@
 .card_plus{
     position: absolute;
     display:none;
-    height: 50px;
-    width: 50px;
+    font-size: 90px;
     z-index: 3;   
-    top:40%;
-    left:40%;
+    top:28%;
+    left:43%;
 }
-
 .card img{
     width:240px;
 }
@@ -51,8 +49,19 @@
 
 @media screen and (max-width:650px) {
     .card{
-        width: 270px;
-        height:320px;
+        width: 290px;
+        height:350px;
+    }
+    .card img{
+        width:290px;
+    }
+    .card_plus{
+        position: absolute;
+        display:none;
+        font-size: 90px;
+        z-index: 3;   
+        top:28%;
+        left:43%;
     }
     
 }

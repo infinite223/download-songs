@@ -29,7 +29,7 @@ const MySongs = ({ mySongs, deleteSong }) => {
             {mySongs.map((item,i) => { 
             return (             
                   <motion.div className='mySongs_list_songs_card'>
-                    <Card Songs={deleteSong} key={item.id.videoId} number={i+1} item={item}></Card>
+                    <Card icon="-" Songs={deleteSong} key={item.id.videoId} number={i+1} item={item}></Card>
                     <motion.div className='mySongs_download' onClick={()=> DownloadSong(item.id.videoId)}>Download</motion.div>
                   </motion.div>                         
                )})}
