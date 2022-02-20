@@ -28,14 +28,14 @@
     height: 70vh;
     z-index: 4;
     padding: 35px;
-  
+    overflow: hidden;  
 }  
 .mySongs_list_title{
     width:100%;
 } 
 text{
     color: red;
-    font-size:23px;
+    font-size:29px;
     font-weight: 900;
     float: right;
 }
@@ -66,36 +66,31 @@ h2{
     color: blue;
     cursor: pointer;
 }
-.right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
 @media screen and (max-width:650px) {
-    .mySongs_list_songs{
-        flex-direction: column;
-        height: auto;
-        min-height: 90%;
-    } 
     .mySongs_list{
-        height: auto;   
-        min-height: 70vh;  
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(218, 207, 195, 0.911);
+        opacity: 0.96;
+        border-radius: 0%;
+        z-index: 4;
+        padding: 35px;
+        overflow: hidden;  
+    }
+    .mySongs_list_songs{
+        padding: 0rem 0rem;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+    }
+    text{
+        float: right;
+        margin-right: 60px;
+        margin-top: -20px;
     }
 }
 
