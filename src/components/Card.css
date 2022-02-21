@@ -9,10 +9,8 @@
     display:block;
     position: relative;
 }
-.card:hover{    
-    background-color: rgba(126, 139, 137, 0.973);
+.card:hover{      
     box-shadow: none;
-    backdrop-filter:blur(50px);    
     cursor: pointer;
 }
 
@@ -59,4 +57,7 @@
     .card img{
         width:290px;
     }   
+    .card:hover .card_plus{
+        display:none;
+    }
 }

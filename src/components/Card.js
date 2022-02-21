@@ -7,7 +7,7 @@ const  Card = ({ item, number,Songs, icon }) => {
   const { x } = useSpring({
     from: { x: 0 },
     x: state ? 1 : 0,
-    config: { duration: 1000 },
+    config: { duration: 400 },
   })    
           
   return (
