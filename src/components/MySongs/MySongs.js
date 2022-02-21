@@ -15,7 +15,6 @@ const MySongs = ({ mySongs, deleteSong }) => {
       console.log(width)
     }
   }, [toggleSongs]);
-  //jakies domyślne wartości dać itp
   return (
     <>
       <div className='mySongs'  onClick={()=>setToggleSongs(true)}>My Songs</div>

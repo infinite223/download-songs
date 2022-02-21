@@ -10,11 +10,12 @@
     position: relative;
 }
 .card:hover{    
-    background-color: rgba(157, 173, 170, 0.295);
-    backdrop-filter:blur(50px); 
-    
+    background-color: rgba(126, 139, 137, 0.973);
+    box-shadow: none;
+    backdrop-filter:blur(50px);    
     cursor: pointer;
 }
+
 .card__number{
     font-size:x-large;
     position:relative;
@@ -35,9 +36,12 @@
     position: absolute;
     display:none;
     font-size: 90px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
     z-index: 3;   
-    top:28%;
-    left:43%;
+    top:32%;
+    
 }
 .card img{
     width:240px;
@@ -54,14 +58,5 @@
     }
     .card img{
         width:290px;
-    }
-    .card_plus{
-        position: absolute;
-        display:none;
-        font-size: 90px;
-        z-index: 3;   
-        top:28%;
-        left:43%;
-    }
-    
+    }   
 }
