@@ -1,35 +1,34 @@
 .App {
-  text-align: center;
-  margin: auto;
-  padding: 50px;
-  background-color: rgba(112, 104, 95, 0.986);
-  height: auto;
+  background: rgb(1,1,1);
+background: linear-gradient(120deg, rgba(1,1,1,1) 23%, rgba(38, 36, 36, 0.973) 62%, rgba(42,40,40,0.9727241238292192) 90%);
   min-height: 100vh;
   font-family: Gill Sans, sans-serif;
   z-index: 2;
 }
+
 input{
-  width: 340px;
-  height: 55px;
-  font-size: xx-large;
+  width: 270px;
+  height: 25px;
+  font-size: x-large;
+  z-index: 4;
   padding: 1rem;
   margin-bottom: 40px;
-  text-align: center;
-  background-color: rgba(218, 207, 195, 0.911);
-  box-shadow: inset 0 0 1em rgb(153, 150, 134), 0 0 1em rgba(49, 22, 22, 0.493);
+  background-color: rgba(16, 16, 16, 0.991);
+  box-shadow: inset 0 0 .1em rgb(153, 150, 134), 0 0 .1em rgba(49, 22, 22, 0.493);
   border-width:0px;
   border:none;
-  border-radius: 3%;
+  border-radius: 3px;
+
+  margin-left: 8%;
+  color: rgb(164, 157, 157);
 }
 input, textarea {outline-style:none;}
 input:hover{
-  box-shadow: inset 0 0 1em rgb(153, 150, 134), 0 0 1em rgba(46, 211, 5, 0.493);
+  box-shadow: inset 0 0 .2em rgb(153, 150, 134), 0 0 .2em rgba(92, 97, 91, 0.493);
 }
 
 @media screen and (max-width:650px) {
-  .App{
-    padding: 2rem;
-  }
+
   input{
     width: 290px;
     height: 70px;

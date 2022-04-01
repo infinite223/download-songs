@@ -2,6 +2,7 @@ import { useState,useEffect } from 'react';
 import './App.css';
 import Cards from './components/Cards.js'
 import {getData} from './components/DataApi/DataApi'
+
 import MySongs from './components/MySongs/MySongs.js'
 function App() {  
   const [dataItems,setDataItems] = useState([]);
@@ -28,8 +29,9 @@ function App() {
      <div>
        <div className="App">
        <MySongs mySongs={mySongs} deleteSong={DeleteSong} />
-         <input placeholder='Search' type="text" onChange={(q)=>setParam(q.target.value)}/>
-        <Cards dataItems={dataItems} Songs={AddSong}/> 
+         <input placeholder='Search song' type="text" onChange={(q)=>setParam(q.target.value)}/>
+         <Cards dataItems={dataItems} Songs={AddSong}/> 
+         
        </div>
      </div> 
   );  

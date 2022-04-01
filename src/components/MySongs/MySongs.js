@@ -2,6 +2,7 @@ import React, { useRef,useState,useEffect } from 'react'
 import './MySongs.css'
 import Card from '../Card';
 import {DownloadSong} from './../DataApi/DownloadSong.js'
+import icon_note from '../../images/music-player.png'
 import {motion} from 'framer-motion'
 const MySongs = ({ mySongs, deleteSong }) => {
   const [toggleSongs, setToggleSongs] = useState(false);
@@ -17,7 +18,10 @@ const MySongs = ({ mySongs, deleteSong }) => {
   }, [toggleSongs]);
   return (
     <>
-      <div className='mySongs'  onClick={()=>setToggleSongs(true)}>My Songs</div>
+      <div className='mySongs'  onClick={()=>setToggleSongs(true)}>
+        <img className='icon__note' src={icon_note}/> 
+        <p>My Songs</p>
+        </div>
       {toggleSongs&&
         <motion.div ref={mySongs_list} className='mySongs_list'>        
           <div className='mySongs_list_title'>

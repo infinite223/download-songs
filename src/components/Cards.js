@@ -4,7 +4,9 @@ const Cards = ({ dataItems,Songs }) => {
     return (
         <div style={{
             display: "flex",
-            flexWrap: "wrap",
+            flexDirection:"column",
+            justifyContent:"center",
+            alignItems:"center",
             }
         }>
             {dataItems.map((item,i) => (
