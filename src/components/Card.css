@@ -11,10 +11,18 @@
     position: relative;
 
     color: wheat;
+    font-size: 1rem;
+}
+.small-card{
+    height: 50px;
+    margin: 5px;
+    background-color: rgba(154, 27, 27, 0.97);
+
+    font-size: .1rem;
 }
 .card:hover{      
     cursor: pointer;
-    background: linear-gradient(-45deg, #080808, #202020, #18191a, #020202);
+    background: linear-gradient(-45deg, #080808, #202020,  #18191a, #020202);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
 }
@@ -31,7 +39,7 @@
 }
 
 .card__number{
-    font-size:large;
+    font-size:1.2em;
     position:absolute;
     width: 35px;
     height: 35px;
@@ -48,16 +56,20 @@
 .card_plus{
     position: absolute;
     display:none;
-    font-size: 90px;
+    font-size: 2em;
     width: 100%;
     text-align: center;
     left: 95px;
     z-index: 3;   
     top:20%; 
+
+    color: rgba(124, 16, 115,.7);
 }
 .card__info{
     margin-left: 2rem;
     text-align: left;
+
+    font-size: .8em;
 }
 .card img{
     width:250px;

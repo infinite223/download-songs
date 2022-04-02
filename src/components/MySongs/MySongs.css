@@ -18,37 +18,45 @@
     font-weight: 900;
 
     margin-top: -90vh;
+    transition-property: width;
+    transition-duration: 1s;
 }
 .icon__note{
     z-index: 2;
     margin-top: 30px;
   
     width: 50px;
-  }
-  p{
+}
+.mySongs__list{
+    width: 100%;
+    height: 100%;
+
     color: white;
-    text-align: center;
-  }
+    display: none;
+    align-items: center;
+    opacity:0.1;
+    transition-property: opacity;
+    transition-delay: 2s;
+}
+.icon__menu{
+    width: 40px;
+    height: 50px;
+    margin-bottom: 20px;
+    opacity: .5;
+}
 .mySongs:hover{
     cursor: pointer;
     transition: all ease;
-    transition-duration: .5s;
-    background-color: rgb(26, 26, 25);
+    transition-duration: 1s;
+    width: 400px;
 }
-.mySongs_list{
-    position: -webkit-sticky;
-    position: sticky;
-    background-color: rgba(218, 207, 195, 0.911);
-    opacity: 0.96;
-    border-radius: 2%;
-    top:15%;
-    left: 5%;
-    width: 90%;
-    height: 70vh;
-    z-index: 4;
-    padding: 35px;
-    overflow: hidden;  
-}  
+.mySongs:hover > .mySongs__list{
+    transition:all ease-in-out;
+    transition-duration: 2s;
+    opacity: 1;
+    display: flex;
+}
+
 .mySongs_list_title{
     width:100%;
 } 
@@ -66,51 +74,12 @@ text:hover{
 h2{
     float: left;
 }
-.mySongs_list_songs{
-    padding: 0rem 2.5rem;
-    width: 100%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-}
 .mySongs_list_songs_card{
     flex-direction: column;
 
 }
-.mySongs_download{
-    font-size: xx-large;
-    color: rgb(37, 184, 17);
-    margin-top: -15px;
-}
-.mySongs_download:hover{
-    color: blue;
-    cursor: pointer;
-}
+
 @media screen and (max-width:650px) {
-    .mySongs_list{
-        position: fixed;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(218, 207, 195, 0.911);
-        opacity: 0.96;
-        border-radius: 0%;
-        z-index: 4;
-        padding: 35px;
-        overflow: hidden;  
-    }
-    .mySongs_list_songs{
-        padding: 0rem 0rem;
-        width: 100%;
-        height: 90%;
-        display: flex;
-        align-items: center;
-    }
-    text{
-        float: right;
-        margin-right: 60px;
-        margin-top: -20px;
-    }
+   
 }
 

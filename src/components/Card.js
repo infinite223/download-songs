@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react'
 import './Card.css'
 import{ useSpring, animated } from '@react-spring/web'
 
-const  Card = ({ item, number,Songs, icon }) => {   
+const  Card = ({ item, number,Songs, icon, view }) => {   
   const [state, toggle] = useState(true)
   const { x } = useSpring({
     from: { x: 0 },
@@ -13,7 +13,7 @@ const  Card = ({ item, number,Songs, icon }) => {
   return (
     <>
       {item.snippet!==undefined&&
-       <animated.div className='card' onClick={()=>(Songs(item),toggle(!state))}
+       <animated.div className={view} onClick={()=>(Songs(item),toggle(!state))}
        style={{   
         scale: x.to({
           range: [0, 0.25, 0.35, 0.45, 0.55, 0.65, 0.75, 1],

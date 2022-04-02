@@ -1,6 +1,6 @@
 .App {
   background: rgb(1,1,1);
-background: linear-gradient(120deg, rgba(1,1,1,1) 23%, rgba(38, 36, 36, 0.973) 62%, rgba(42,40,40,0.9727241238292192) 90%);
+background: linear-gradient(220deg, rgba(1,1,1,1) 23%, rgba(38, 36, 36, 0.973) 62%, rgba(42,40,40,0.9727241238292192) 90%);
   min-height: 100vh;
   font-family: Gill Sans, sans-serif;
   z-index: 2;
