@@ -28,8 +28,7 @@ const MySongs = ({ mySongs, deleteSong }) => {
             return (             
                   //<motion.div className='mySongs_list_songs_card'>
                   <>
-                    <Card icon="-" Songs={deleteSong} key={item.id.videoId} number={i+1} item={item}></Card>
-                    <img src={download_icon} onClick={()=> DownloadSong(item.id.videoId)}/>
+                    <Card smallCard={true} icon="-" Songs={deleteSong} key={item.id.videoId} number={i+1} item={item}></Card>
                     </> // </motion.div>                         
             )})}
         </div>

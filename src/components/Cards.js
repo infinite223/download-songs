@@ -10,7 +10,7 @@ const Cards = ({ dataItems,Songs }) => {
             }
         }>
             {dataItems.map((item,i) => (
-            <Card view="card" Songs={Songs} icon="+" key={item.id.videoId} number={i+1} item={item}></Card>
+            <Card smallCard={false} Songs={Songs} icon="+" key={item.id.videoId} number={i+1} item={item}></Card>
         ))}
         </div>
      )

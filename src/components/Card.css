@@ -11,14 +11,20 @@
     position: relative;
 
     color: wheat;
-    font-size: 1rem;
 }
 .small-card{
-    height: 50px;
-    margin: 5px;
-    background-color: rgba(154, 27, 27, 0.97);
+    width: 85%;
+    height: 60px;
+    background-color: rgba(29, 28, 28,.97);
+    border:1px solid rgb(44, 40, 40);
 
-    font-size: .1rem;
+    margin: 5px;
+
+    z-index: 2;
+    display:flex;
+    position: relative;
+
+    color: wheat;
 }
 .card:hover{      
     cursor: pointer;
@@ -39,7 +45,7 @@
 }
 
 .card__number{
-    font-size:1.2em;
+    font-size:15px;
     position:absolute;
     width: 35px;
     height: 35px;
@@ -50,13 +56,43 @@
     justify-content: center;
     line-height: 35px;  
 }
+.small-card__number{
+    font-size:10px;
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(52, 52, 49);
+    right: 2px;
+    top:2px;
+    display: flex;
+    justify-content: center;
+    line-height: 20px;  
+}
+.download_icon{
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    z-index: 10;
+    right: 25px;
+    bottom: 25px;
+}
+.small-download_icon{
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    z-index: 10;
+    right: 2px;
+    bottom: 2px; 
+}
 .card:hover .card_plus{
     display:flex;
 }
 .card_plus{
     position: absolute;
     display:none;
-    font-size: 2em;
+    font-size: 80px;
     width: 100%;
     text-align: center;
     left: 95px;
@@ -68,11 +104,23 @@
 .card__info{
     margin-left: 2rem;
     text-align: left;
-
-    font-size: .8em;
+    font-size: 15px;
 }
-.card img{
+.small-card__info{
+    width: 50%;
+    margin: auto;
+    margin-left: 1rem;
+    font-size: 12px;
+    line-height: 20px;
+
+    font-weight: 100;
+}
+.secend_img{
     width:250px;
+    height:100%;
+}
+.small-secend_img{
+    width: 80px;
 }
 .card:hover > .secend_img{
     filter: hue-rotate(180deg);
@@ -83,7 +131,7 @@
     .card{
         width: 100%;
     }
-    .card img{
+    .secend_img{
         width:290px;
     }   
     .card:hover .card_plus{

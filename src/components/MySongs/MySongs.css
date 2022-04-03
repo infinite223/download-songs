@@ -31,6 +31,9 @@
     width: 100%;
     height: 100%;
 
+    flex-direction: column;
+    margin-top: 3rem;
+
     color: white;
     display: none;
     align-items: center;
