@@ -4,13 +4,13 @@ import Card from '../Card';
 import {DownloadSong} from './../DataApi/DownloadSong.js'
 import icon_note from '../../images/music-player.png'
 import menu_icon from '../../images/list.png'
-import download_icon from '../../images/icons8-download-50.png'
 
 import {motion} from 'framer-motion'
 const MySongs = ({ mySongs, deleteSong }) => {
   const [toggleSongs, setToggleSongs] = useState(false);
   const [width, setWidth] = useState(0);
   const mySongs_list = useRef();
+  const [toggleMenu, setToggleMenu] = useState(false);
    
   useEffect(() =>{
     if(toggleSongs)
@@ -19,9 +19,14 @@ const MySongs = ({ mySongs, deleteSong }) => {
       console.log(width)
     }
   }, [toggleSongs]);
+
+  useEffect(() =>{
+    const barStyle = document.querySelector(".mySongs");
+    //barStyle.style.display = "none";
+  }, [toggleMenu]);
   return (
     <>
-      <div className='mySongs'  onClick={()=>setToggleSongs()}>
+      <div className='mySongs' onClick={()=>setToggleSongs()}>
         <img className='icon__note' src={icon_note}/> 
         <div className='mySongs__list'>
            {mySongs.map((item,i) => { 
@@ -32,7 +37,7 @@ const MySongs = ({ mySongs, deleteSong }) => {
                     </> // </motion.div>                         
             )})}
         </div>
-        <img className='icon__menu' src={menu_icon}/> 
+        <img onClick={()=>setToggleMenu(!toggleMenu)} className='icon__menu' src={menu_icon}/> 
       </div>
       {toggleSongs&&
         <motion.div ref={mySongs_list} className='mySongs_list'>        

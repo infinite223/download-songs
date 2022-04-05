@@ -10,7 +10,7 @@ input{
   width: 270px;
   height: 25px;
   font-size: x-large;
-  z-index: 4;
+  z-index: 1;
   padding: 1rem;
   margin-bottom: 40px;
   background-color: rgba(16, 16, 16, 0.991);

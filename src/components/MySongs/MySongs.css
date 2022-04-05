@@ -118,20 +118,27 @@ h2{
         transition: all ease;
         transition-duration: 1s;
         height: 100vh;
-        top: 0%;
+        top:0px;
+        width: 100%;
+    }
+    .mySongs:hover > .icon__menu,.icon__note{
+       padding: 2rem;
     }
     .icon__menu{
         width: 30px;
         height: 30px;
         opacity: .5;
         margin:auto 15px;
+        z-index: 20;
     }
     .icon__note{
         z-index: 2;
       
-        width: 40px;
+        width: 30px;
         height: 30px;
-        margin:auto 15px;
+        
+        margin-top: -15px;
+        margin-bottom: auto;        
     }
 }
 
